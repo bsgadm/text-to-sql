@@ -16,7 +16,11 @@ import pymysql
 import time
 
 OPENAI_API_KEY = st.secrets["openai"]["OPENAI_API_KEY"]
-st.set_page_config(page_title="Customer Search")
+st.set_page_config(
+    page_title="Customer Search",  # Customize the title
+    page_icon="favicon.ico",  # Use your own favicon if needed
+    )
+
 
 # 1. Initialize session state.
 if "db_config" not in st.session_state:
