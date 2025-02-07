@@ -18,7 +18,7 @@ import time
 OPENAI_API_KEY = st.secrets["openai"]["OPENAI_API_KEY"]
 st.set_page_config(
     page_title="Customer Search",  # Customize the title
-    page_icon="favicon.ico",  # Use your own favicon if needed
+    page_icon="",  # Use your own favicon if needed
     )
 
 
