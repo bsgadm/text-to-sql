@@ -1,11 +1,12 @@
 [theme]
-base="light"
+base = "Dark"
 
 [server]
-headless=true
+headless = true
 
 [browser]
-gatherUsageStats=false
+gatherUsageStats = false
 
 [global]
-hideStreamlitMark=true
+hideStreamlitMark = true
+disableWatchdogWarning = true
