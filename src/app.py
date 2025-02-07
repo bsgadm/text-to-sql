@@ -16,7 +16,7 @@ import pymysql
 import time
 
 OPENAI_API_KEY = st.secrets["openai"]["OPENAI_API_KEY"]
-st.set_page_config(page_title="SQL and Python Agent")
+st.set_page_config(page_title="Customer Search")
 
 # 1. Initialize session state.
 if "db_config" not in st.session_state:
@@ -126,7 +126,7 @@ if st.session_state.db_connected and st.session_state.databases:
             st.sidebar.error(f"Connection to {db_choice} failed: {str(e)}")
 
 # Main page
-st.title("SQL and Python Agent")
+st.title("Customer Search")
 st.write("This agent can help you with SQL queries and Python code for data analysis. Configure your MySQL database connection using the sidebar.")
 
 if st.session_state.db_connected and st.session_state.db_config['DATABASE']:
